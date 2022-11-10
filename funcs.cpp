@@ -13,3 +13,15 @@ double length(Coord3D *p){
   dist = sqrt(dist);
   return dist;
 }
+
+Coord3D * fartherFromOrigin(Coord3D *p1, Coord3D *p2){
+  double lengthA=length(p1);
+  double lengthB=length(p2);
+  if(lengthA<lengthB){
+    return p2;
+  }
+  else{
+    return p1;
+  }
+
+}
